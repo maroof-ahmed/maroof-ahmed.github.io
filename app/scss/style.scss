@@ -1,0 +1,341 @@
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+//@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap-compass.scss";
+$font-size-h1: 28px;
+$theme-font: "Montserrat";
+//** Global textual link color.
+$link-color: #e6e5c1;
+//** Link hover color set via `darken()` function.
+$link-hover-color: darken($link-color, 15%);
+@import "./_variables";
+//@import "bootstrap";
+//@import "compass";
+$theme-bgcolor: #34302D;
+$theme-bgcolor-2: #111;
+$theme-bgcolor-3: #99338d; //#842E7A;
+$theme-bgcolor-4: #3F4167;
+$theme-bgcolor-5: #09487D; //#0C5798; // #222338
+$theme-bgcolor-6: #513151;
+$theme-color: #fff;
+$theme-color-2: '';
+$theme-color-3: '';
+
+/*****---  [BASE]  ---*****/
+
+html {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    font-family: 'varela round', sans-serif;
+    color: $theme-color;
+    font-size-adjust: 0.45;
+}
+
+a {
+    color: $theme-bgcolor-3;
+    text-decoration: none;
+}
+
+p {
+    @extend h4;
+    margin-top: 15px;
+}
+
+hr {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'montserrat', Tahoma;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+    line-height: 28px;
+}
+
+header {
+    background: rgba(#000, 0.6); //rgba(#422222, 0.8);//$theme-bgcolor;
+    text-align: center;
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    &:before {
+        height: 3px;
+        background-color: $theme-bgcolor-3;
+        display: block;
+        content: '';
+        border-radius: 3px;
+        //@include border-radius(3px);
+    }
+}
+
+
+/*****---  [/BASE]  ---*****/
+
+.mar-top-no {
+    margin-top: 0;
+}
+
+.pad-top {
+    padding-top: 15px;
+}
+
+.pad-top-2x {
+    padding-top: 30px;
+}
+
+.pad-top-3x {
+    padding-top: 45px;
+}
+
+.i-block {
+    display: inline-block;
+    &.vtop {
+        vertical-align: top;
+    }
+    &.vmiddle {
+        vertical-align: middle;
+    }
+}
+
+.content-wrap {
+    padding: 0px 7%;
+    .head {
+        margin-top: 0;
+        padding-top: 40px;
+    }
+}
+
+.nav-wrap li a {
+    color: $theme-color;
+    font-family: $theme-font;
+    padding: 18px 20px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    &:hover {
+        background: $theme-bgcolor-3;
+    }
+}
+
+.section,
+article {
+    display: block;
+    .content-wrap {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .content-wrap-i {
+        margin: 40px 0px;
+    }
+}
+
+.section {
+    &.about-me {
+        background: url("../images/space-1.jpg");
+        background-attachment: fixed;
+        background-position: bottom;
+    }
+    &.skills {
+        background: url("../images/abstract-1.jpg");
+        background-attachment: fixed;
+    }
+}
+
+.intro {
+    height: 500px;
+    background: #111;
+    .details-wrap {
+        position: relative;
+        z-index: 999;
+    }
+    .details {
+        margin-top: 125px;
+        display: inline-block;
+        cursor: default;
+        h1 {
+            font-family: 'varela round', sans-serif;
+            font-weight: bold;
+            background: transparentize($theme-bgcolor, 0.8);
+            padding: 15px;
+            margin-bottom: 0;
+            display: inline-block;
+        }
+        h3 {
+            background: transparentize($theme-bgcolor, 0.8);
+            padding: 15px;
+            margin-top: 0;
+        }
+    }
+}
+
+.skills {
+    ul li p {
+        margin: 0px;
+    }
+}
+
+.about-bg {
+    background: rgba(#000, 0.2); //$theme-bgcolor-4;//#3F5F67;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 99;
+}
+
+.skills-bg {
+    background: rgba(#000, 0.7); //#3F5F67
+    width: 100%;
+    height: 500px;
+}
+
+.projects-bg {
+    background: $theme-bgcolor-6;
+    width: 100%;
+    height: 500px;
+}
+
+.fallback-bg,
+.sn-active {
+    background: #516E87
+}
+
+.transition-bg {
+    background: #516E87
+}
+
+.mountains-bg {
+    background-image: url("../Images/mountains.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+.skyline-bg {
+    background: url("../Images/city-skyline.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+.night-bg {
+    background: url("../Images/night-sky.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+.sky-bg {
+    background: url("../Images/sky.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+.seasky-bg {
+    background: url("../Images/sea-sky.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+img.round {
+    border-radius: 100px;
+}
+
+.fa:hover,
+.mfizz:hover {
+    color: #e6e5c1 !important;
+    transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+
+/*****---  [SLIDER]  ---*****/
+
+.slider {
+    background: $theme-bgcolor;
+    .slide {
+        height: 500px;
+    }
+}
+
+.skill-slider {
+    background: $theme-bgcolor;
+    margin-top: 20px;
+    i.slide {
+        max-height: 340px;
+        text-align: center;
+        &:before {
+            vertical-align: top;
+        }
+    }
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    &.out {
+        z-index: 99;
+    }
+}
+
+.skyblur-bg {
+    background-image: url('../images/sky-blur.jpg');
+}
+
+.skyblur-bg-2 {
+    background-image: url('../images/galaxy-1.jpg');
+}
+
+.skyblur-bg-3 {
+    background-image: url('../images/space-1.jpg');
+}
+
+.skyblur-bg-4 {
+    background-image: url('../images/abstract-1.jpg');
+}
+
+.skyblur-bg-5 {
+    background-image: url('../images/abstract-2.jpg');
+}
+
+.header-clown {
+    background: rgba(#fff, 0.6);
+}
+
+
+/*****---  [/SLIDER]  ---*****/
+
+@media(min-width: 768px) {
+    .nav-wrap li,
+    .nav-wrap li a {
+        display: inline-block;
+    }
+}
