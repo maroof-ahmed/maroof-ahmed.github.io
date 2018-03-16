@@ -8,6 +8,49 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 // --------------------------------------------------
 
 
+//////// Custom Variables ////////
+$theme-font: "Montserrat";
+//** Global textual link color.
+$link-color: #e6e5c1;
+$link-hover-color: darken($link-color, 15%);
+
+//$theme-bgcolor: #34302D;
+//$theme-bgcolor-2: #222;
+//$theme-bgcolor-3: #99338d; //#842E7A;
+//$theme-bgcolor-4: #3F4167;
+//$theme-bgcolor-5: #09487D; //#0C5798; // #222338
+//$theme-bgcolor-6: #513151;
+
+$white: #fff;
+$theme-grey: #f9f9f9;
+$theme-orange: #ff6200;
+
+
+$text-dark-orange: #be3600;
+$text-grey: #575656;
+$text-light-grey: #999;
+$text-green: #61c0bd;
+$bg-grey: #f1f2f5;
+
+
+
+$font-size-h1: 28px;
+$theme-font: "Montserrat";
+//** Global textual link color.
+$link-color: #e6e5c1;
+$link-hover-color: darken($link-color, 15%);
+$theme-bgcolor: #34302D;
+$theme-bgcolor-2: #111;
+$theme-bgcolor-3: #99338d; //#842E7A;
+$theme-bgcolor-4: #3F4167;
+$theme-bgcolor-5: #09487D; //#0C5798; // #222338
+$theme-bgcolor-6: #513151;
+$theme-color: #fff;
+$theme-color-2: '';
+$theme-color-3: '';
+
+
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.

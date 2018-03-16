@@ -18,19 +18,19 @@
         var wp1 = aboutSection.waypoint({
             handler: function(direction) {
                 if (direction == 'down') {
-                    $('.desc-wrap', aboutSection).addClass('animated fadeInLeft');
-                    $('.icon-wrap', aboutSection).addClass('animated fadeInRight');
+                    $('.desc-wrap', aboutSection).addClass('animated fadeInLeft').removeClass('hide');
+                    $('.icon-wrap', aboutSection).addClass('animated rollIn').removeClass('hide');
                 }
             },
-            offset: 'bottom-in-view'
+            //offset: 'bottom-in-view'
         });
 
         var skillSection = $('#skills');
         var wp2 = skillSection.waypoint({
             handler: function(direction) {
                 if (direction == 'down') {
-                    $('.desc-wrap', skillSection).addClass('animated lightSpeedIn');
-                    $('.icon-wrap', skillSection).addClass('animated lightSpeedIn');
+                    $('.desc-wrap', skillSection).addClass('animated lightSpeedIn').removeClass('hide');
+                    $('.icon-wrap', skillSection).addClass('animated fadeInLeft').removeClass('hide');
                 }
             },
             offset: 'bottom-in-view'
@@ -141,7 +141,7 @@
         });
 
         
-        $('header.content-wrap').clown();
+
 
     });
 
