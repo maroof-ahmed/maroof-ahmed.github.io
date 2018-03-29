@@ -43,11 +43,11 @@
             <ul class="nav">
                 <li><a href="#">Home</a>
                 </li>
-                <li><a href="#about">About me</a>
+                <li><a href="#skills">Skills</a>
                 </li>
                 <li><a href="javascript:;" style="background: transparent;" onclick="$('.my-img').animate('rubberBand');"><i class="fa fa-snowflake-o font-16" aria-hidden="true"></i></a>
                 </li>
-                <li><a href="#skills">Skills</a>
+                <li><a href="#about">About</a>
                 </li>
                 <li><a href="#contact">Contact</a>
                 </li>
@@ -55,14 +55,17 @@
         </nav>
     </header>
 
-    <section class="intro">
-        <div class="slider">
+
+<div class="slider">
             <div class="skyblur-bg slide"><div class="overlay"></div></div>
             <div class="skyblur-bg-2 slide"><div class="overlay"></div></div>
             <div class="skyblur-bg-3 slide"><div class="overlay"></div></div>
             <div class="skyblur-bg-4 slide"><div class="overlay"></div></div>
             <div class="skyblur-bg-5 slide"><div class="overlay"></div></div>
         </div>
+
+
+    <section class="intro">
         <div align="center" class="details-wrap animated rubberBand">
             <div align="center" class="details">
                 <a href="javascript:;"><img class="my-img round" src="images/mav-thumb-img-2.jpg" onclick="$(this).animate('rubberBand');" width="165px" height="200px" />
@@ -74,14 +77,13 @@
                 </div>
             </div>
         </div>
-        <!--img src="images/sky-blur.jpg" style="width:100%; max-height: 500px" /-->
     </section>
 
     <section id="skills" class="skills section">
         <article class="skills-bg">
             <div class="skills-wrap content-wrap">
                 <div class="skills content-wrap-i clearfix">
-                    <div class="col-xs-12 col-md-7 col-sm-6 desc-wrap hide">
+                    <div class="col-xs-12 col-sm-6-- col-md-9 desc-wrap hide">
                         <h1 class="mar-top-no head">SKILLS</h1>
                         <hr />
 
@@ -147,6 +149,7 @@
                                 <p>Chrome Dev Tools</p>
                             </li>
                         </ul>
+                        <div class="clearfix"></div>
 
 
                         <div class="col-md-6 col-xs-12"><h3 class="sub-head">Tools</h3>
@@ -245,14 +248,14 @@
 
 
                     </div>
-                    <div class="col-xs-12 col-md-5 col-sm-6 icon-wrap hide hidden-xs">
+                    <div class="col-xs-12 col-sm-6-- col-md-3 icon-wrap hide">
                         <div class="skill-slider">
-                            <i class="slide mfizz icon-shell" style="font-size: 20em; color: #7CB0BD; display:none;"></i>
-                            <i class="slide mfizz icon-database" style="font-size: 20em; color: #7CB0BD; display:none;"></i>
-                            <i class="slide mfizz icon-php-alt" style="font-size: 21em; color: #7CB0BD; display:none;"></i>
-                            <i class="slide mfizz icon-nodejs" style="font-size: 21em; color: #7CB0BD; display:none;"></i>
-                            <i class="slide fa fa-css3" style="font-size: 20em; color: #7CB0BD; display:none;"></i>
-                            <i class="slide fa fa-html5" style="font-size: 21em; color: #7CB0BD;"></i>
+                            <i class="slide mfizz icon-shell" style="font-size: 20em; display:none;"></i>
+                            <i class="slide mfizz icon-database mar-l-10" style="font-size: 20em; display:none;"></i>
+                            <i class="slide mfizz icon-php-alt mar-l-10" style="font-size: 21em; display:none;"></i>
+                            <i class="slide mfizz icon-nodejs mar-l-10" style="font-size: 21em; display:none;"></i>
+                            <i class="slide fa fa-css3" style="font-size: 20em; display:none;"></i>
+                            <i class="slide fa fa-html5" style="font-size: 21em;"></i>
                         </div>
                     </div>
                 </div>
@@ -266,15 +269,16 @@
             <div class="about-wrap content-wrap i-block">
 
                 <div class="about content-wrap-i clearfix">
-                    <div class="col-xs-12 col-md-7 desc-wrap hide">
+                    <div class="col-xs-12 col-md-7 desc-wrap">
                         <h1 class="mar-top-no head">ABOUT ME</h1>
                         <hr />
-                        <p class="desc">Working as a Frontend / UI developer, i not only develop eye-catching responsive User Interfaces for the web but also test and fix cross-browser, cross-platform and cross-resolution issues. I'm always ready to bootstrap projects,
-                            collaborate and help teammates with the UI and other issues, provide support to design and development teams, take responsibility and play games &nbsp; <i class="fa fa-smile-o font-24" aria-hidden="true"></i>
+                        <p class="desc">Working as a Frontend / UI developer, i not only develop eye-catching responsive User Interfaces for the web, but also test and fix cross-browser, cross-platform and cross-resolution issues. I'm always ready to bootstrap projects,
+                            collaborate and help teammates, provide support to design and development teams, take responsibility and play games &nbsp; <i class="fa fa-smile-o font-24" aria-hidden="true"></i>
                         </p>
                     </div>
-                    <div class="col-xs-12 col-md-5 text-center icon-wrap hide">
-                        <i class="fa fa-soccer-ball-o mar-t-30" aria-hidden="true" style="font-size: 200px;" onmouseover="$(this).animate('bounce');"  onclick="$(this).animate('rotateIn');"></i>
+                    <div class="col-xs-12 col-md-5 text-center icon-wrap">
+                        <!-- <i class="fa fa-soccer-ball-o mar-t-30" aria-hidden="true" style="font-size: 200px; color: #c1e6c9;" onmouseover="$(this).animate('bounce');"  onclick="$(this).animate('rotateIn');"></i> -->
+                        <i class="fa fa-soccer-ball-o mar-t-30" aria-hidden="true" style="font-size: 190px; color: #e6cfc1;" onmouseover="$(this).animate('bounce');"  onclick="$(this).animate('rotateIn');"></i>
                     </div>
                 </div>
 
@@ -290,11 +294,12 @@
                     <div class="col-xs-12 col-md-7 desc-wrap">
                         <h1 class="mar-top-no head">CONTACT</h1>
                         <hr />
-                        <p class="col-xs-12 col-lg-7 no-pad-l"> <i class="fa fa-envelope-o font-24" aria-hidden="true"></i> &nbsp; <a href="mailto:mavismyname@gmail.com?subject=Github%20Response">mavismyname@gmail.com</a></p>
-                        <p class="col-xs-12 col-lg-5 no-pad-l"> <i class="fa fa-skype font-24" aria-hidden="true"></i> &nbsp; maroof-ahmed-</p>
+                        <p class="col-xs-12 col-lg-7 no-pad-l mar-t-20 no-mar-b"> <i class="fa fa-envelope font-23" aria-hidden="true"></i> &nbsp; <a href="mailto:mavismyname@gmail.com?subject=Github%20Response">mavismyname@gmail.com</a></p>
+                        <p class="col-xs-12 col-lg-5 no-pad-l mar-t-20 no-mar-b"> <i class="fa fa-skype font-24" aria-hidden="true"></i> &nbsp; maroof-ahmed-</p>
+                        <p class="col-xs-12 col-lg-7-- no-pad-l mar-b-30"> <i class="fa fa-linkedin-square font-24" aria-hidden="true"></i> &nbsp; <a href="https://www.linkedin.com/in/maroof-ahmed-vahidy">linkedin.com/in/maroof-ahmed-vahidy</a></p>
                     </div>
                     <div class="col-xs-12 col-md-5 icon-wrap text-center">
-                        <i class="fa fa-envelope-o mar-t-10" aria-hidden="true" style="font-size: 100px;" onmouseover="$(this).animate('bounce');"></i>
+                        <i class="fa fa-envelope-o mar-t-10--" aria-hidden="true" style="font-size: 150px; color: #9ad7f5;" onclick="$(this).animate('bounce');"></i>
                     </div>
                 </div>
             </div>
