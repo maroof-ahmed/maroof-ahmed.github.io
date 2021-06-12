@@ -24,9 +24,6 @@
 	<!--endbuild-->
 
 
-	<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" type="text/css"-->
-	<!-- Require app.css and vendor.css-->
-	<!-----link href="css/app.css" rel="stylesheet"----->
 	<!-- Include the following file for rtl support -->
 	<!--<link href="css/app-rtl.css" rel="stylesheet">-->
 
@@ -39,14 +36,14 @@
 								    <![endif]-->
 </head>
 
-<body class="fallback-bg transition-bg">
+<body class="fallback-bg transition-bg" data-spy="scroll" data-target="#scrollSpy" data-offset="10">
 
 	<div class="site-wrapper">
 		<header class="content-wrap--">
-			<nav class="nav-wrap animated rubberBand hidden-xs">
+			<nav class="nav-wrap animated rubberBand hidden-xs" id="scrollSpy">
 				<ul class="nav">
-					<li>
-						<a href="#">Home</a>
+					<li class="active">
+						<a href="#home">Home</a>
 					</li>
 					<li>
 						<a href="#skills">Skills</a>
@@ -86,7 +83,7 @@
 		</div>
 
 
-		<section class="intro">
+		<section id="home" class="intro">
 			<div align="center" class="details-wrap animated rubberBand">
 				<div align="center" class="details">
 					<a href="javascript:;"><img class="my-img round" src="images/mav-thumb-img-2.jpg"
@@ -108,7 +105,7 @@
 			<article class="skills-bg">
 				<div class="skills-wrap content-wrap">
 					<div class="skills content-wrap-i clearfix">
-						<div class="col-xs-12 col-sm-6-- col-md-9 desc-wrap hide">
+						<div class="col-xs-12 col-sm-6-- col-md-9 desc-wrap opacity-hide">
 							<h1 class="mar-top-no head">SKILLS</h1>
 							<hr />
 
@@ -338,7 +335,7 @@
 
 
 						</div>
-						<div class="skill-slider-wrap col-xs-12 col-sm-6-- col-md-3 icon-wrap hide  hidden-xs hidden-sm">
+						<div class="skill-slider-wrap col-xs-12 col-sm-6-- col-md-3 icon-wrap opacity-hide hidden-xs hidden-sm">
 							<div class="skill-slider">
 								<i class="slide mfizz icon-shell" style="font-size: 20em; display:none;"></i>
 								<i class="slide mfizz icon-database mar-l-10" style="font-size: 20em; display:none;"></i>
@@ -362,11 +359,12 @@
 						<div class="col-xs-12 col-md-7 desc-wrap">
 							<h1 class="mar-top-no head">ABOUT ME</h1>
 							<hr />
-							<p class="desc">Working as a Frontend / UI developer, i not only develop eye-catching
-								responsive User Interfaces for the web, but also test and fix cross-browser,
-								cross-platform and cross-resolution issues. I'm always ready to bootstrap projects,
+							<p class="desc">Im a Frontend and a Full Stack Web Developer from Pakistan with 9 years of experience. I
+								like to develop eye-catching
+								responsive User Interfaces for the web, test and fix cross-platform and cross-resolution
+								issues, Integrate REST APIs, write PHP Code, etc. I'm always ready to bootstrap projects,
 								collaborate and help teammates, provide support to design and development teams, take
-								responsibility and play games &nbsp;
+								responsibility and play console games. &nbsp;
 								<i class="fa fa-smile-o font-24" aria-hidden="true"></i>
 							</p>
 						</div>
@@ -388,21 +386,25 @@
 						<div class="col-xs-12 col-md-7 desc-wrap">
 							<h1 class="mar-top-no head">CONTACT</h1>
 							<hr />
-							<p class="col-xs-12 col-md-6 no-pad-l mar-t-20 no-mar-b">
-								<i class="fa fa-envelope font-23" aria-hidden="true"></i>
-								&nbsp;
-								<a href="mailto:mavismyname@gmail.com?subject=Hi%20Maroof">mavismyname@gmail.com</a>
-							</p>
-							<p class="col-xs-12 col-md-6 no-pad-l mar-t-20 no-mar-b">
-								<i class="fa fa-linkedin-square font-24" aria-hidden="true"></i>
-								&nbsp;
-								<a href="https://www.linkedin.com/in/maroof-ahmed-vahidy">bit.ly/2T4ITCp</a>
-							</p>
-							<p class="col-xs-12 col-md-6 no-pad-l mar-t-20 no-mar-b">
+
+							<div class="mar-t-15">
+								<p class="col-xs-12 col-md-7 no-pad-l no-mar-b">
+									<i class="fa fa-envelope font-23" aria-hidden="true"></i>
+									&nbsp;
+									<a href="mailto:mavismyname@gmail.com?subject=Hi%20Maroof">mavismyname@gmail.com</a>
+								</p>
+								<p class="col-xs-12 col-md-5 no-pad-l no-mar-b">
+									<i class="fa fa-linkedin-square font-24" aria-hidden="true"></i>
+									&nbsp;
+									<a href="https://www.linkedin.com/in/maroof-ahmed-vahidy" target="_blank">bit.ly/2T4ITCp</a>
+								</p>
+							</div>
+
+							<p class="col-xs-12 col-md-7 no-pad-l mar-t-20 no-mar-b">
 								<i class="fa fa-skype font-24" aria-hidden="true"></i>
 								&nbsp; maroof-ahmed-
 							</p>
-							<p class="col-xs-12 col-md-6 no-pad-l mar-t-20 no-mar-b">
+							<p class="col-xs-12 col-md-5 no-pad-l mar-t-20 no-mar-b">
 								<i class="fa fa-twitter font-24" aria-hidden="true"></i>
 								&nbsp; @MaroofAV
 							</p>

@@ -25,6 +25,8 @@ html {
 	-webkit-box-sizing: inherit;
 	-moz-box-sizing: inherit;
 	box-sizing: inherit;
+	scroll-behavior: smooth;
+	transition-duration: 100ms;
 }
 
 html,
@@ -35,6 +37,9 @@ body {
 	background-color: #333;
 	font-weight: 300;
 	letter-spacing: 0.5px;
+	position: relative;
+	scroll-behavior: smooth;
+	transition-duration: 100ms;
 }
 
 a {
@@ -110,6 +115,22 @@ header {
 	}
 }
 
+.desc-wrap,
+.icon-wrap {
+	opacity: 1;
+	visibility: visible;
+
+	.desc {
+		margin-top: 25px;
+	}
+
+	&.opacity-hide {
+		opacity: 0 !important;
+		visibility: hidden;
+	}
+}
+
+
 .content-wrap {
 	padding: 0px 7%;
 
@@ -125,6 +146,7 @@ header {
 		padding-bottom: 2px;
 		text-transform: uppercase;
 		font-weight: 400;
+		margin-top: 40px;
 	}
 }
 
@@ -238,7 +260,7 @@ $step: 5;
 
 
 .nav-wrap li a {
-	color: $theme-color;
+	color: #fff;
 	font-family: $theme-font;
 	font-size: 14.5px;
 	padding: 18px 20px;
@@ -250,11 +272,18 @@ $step: 5;
 	letter-spacing: 1px;
 
 	&:hover,
-	&:focus {
-		background: rgba(153, 51, 141, 0.5);
+	&:focus,
+	&:visited {
+		background: rgba(153, 51, 141, 0.15);
 		outline: 0px none;
-		color: inherit !important;
+		color: #fff !important;
 	}
+}
+
+.nav-wrap li.active a {
+	background: rgba(153, 51, 141, 0.5);
+	outline: 0px none;
+	color: inherit !important;
 }
 
 .section,
@@ -375,7 +404,6 @@ article {
 }
 
 .contact-bg {
-	// background: rgba(81, 49, 81, 0.5);
 	width: 100%;
 }
 

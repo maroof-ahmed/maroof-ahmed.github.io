@@ -11568,6 +11568,9 @@ html {
 *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  scroll-behavior: smooth;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
 }
 
 html,
@@ -11578,6 +11581,10 @@ body {
   background-color: #333;
   font-weight: 300;
   letter-spacing: 0.5px;
+  position: relative;
+  scroll-behavior: smooth;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
 }
 
 a {
@@ -11642,6 +11649,23 @@ header {
   vertical-align: middle;
 }
 
+.desc-wrap,
+.icon-wrap {
+  opacity: 1;
+  visibility: visible;
+}
+
+.desc-wrap .desc,
+.icon-wrap .desc {
+  margin-top: 25px;
+}
+
+.desc-wrap.opacity-hide,
+.icon-wrap.opacity-hide {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
 .content-wrap {
   padding: 0px 7%;
 }
@@ -11658,6 +11682,7 @@ header {
   padding-bottom: 2px;
   text-transform: uppercase;
   font-weight: 400;
+  margin-top: 40px;
 }
 
 /* ==========================================================================
@@ -12455,7 +12480,13 @@ header {
   letter-spacing: 1px;
 }
 
-.nav-wrap li a:hover, .nav-wrap li a:focus {
+.nav-wrap li a:hover, .nav-wrap li a:focus, .nav-wrap li a:visited {
+  background: rgba(153, 51, 141, 0.15);
+  outline: 0px none;
+  color: #fff !important;
+}
+
+.nav-wrap li.active a {
   background: rgba(153, 51, 141, 0.5);
   outline: 0px none;
   color: inherit !important;
