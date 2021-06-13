@@ -1,4 +1,4 @@
-name: Publish to gh-pages
+name: Publish gh-pages to master
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
 
       # deploy ./build directory to the remote master branch
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
