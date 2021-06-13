@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
 	// Output to the build folder
@@ -9,6 +10,8 @@ module.exports = {
 		// filename: '[name].bundle.js',
 		// clean the build folder before each build,
 		clean: true,
+		publicPath: './',
+		filename: 'bundle-[name].js',
 	},
 
 	module: {
@@ -71,4 +74,8 @@ module.exports = {
 	optimization: {
 		splitChunks: { chunks: 'all' },
 	},
+
+	// externals: {
+	// 	jquery: 'jQuery',
+	// },
 };
