@@ -1,0 +1,29 @@
+name: Publish to gh-pages
+
+on:
+repository_dispatch:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  deployJob:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the Repo
+      - uses: actions/checkout@v2
+
+      # Install Node and run npm commands
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - run: npm i
+      - run: npm run build
+
+      # deploy ./build directory to the remote master branch
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
