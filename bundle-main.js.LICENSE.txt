@@ -10,6 +10,12 @@
    */
 
 /*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under the MIT license
+ */
+
+/*!
  * jQuery JavaScript Library v1.11.1
  * http://jquery.com/
  *
@@ -22,3 +28,10 @@
  *
  * Date: 2014-05-01T17:42Z
  */
+
+/*!
+Waypoints - 4.0.0
+Copyright © 2011-2015 Caleb Troughton
+Licensed under the MIT license.
+https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
+*/
