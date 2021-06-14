@@ -64,26 +64,26 @@
 			offset: '40%',
 		});
 
-		var aboutSection = $('#about');
+		// var aboutSection = $('#about');
 
-		var wp1 = aboutSection.waypoint({
-			handler: function (direction) {
-				if (direction == 'down') {
-					$('.desc-wrap', aboutSection)
-						.addClass('animated fadeInLeft')
-						.removeClass('hide');
-					$('.icon-wrap', aboutSection)
-						.addClass('animated rollIn')
-						.removeClass('hide');
-				}
-			},
-			continuous: true,
-			//offset: 'bottom-in-view'
-			// offset: function () {
-			// 	return -this.element.clientHeight + 200;
-			// },
-			offset: '-40%',
-		});
+		// var wp1 = aboutSection.waypoint({
+		// 	handler: function (direction) {
+		// 		if (direction == 'down') {
+		// 			$('.desc-wrap', aboutSection)
+		// 				.addClass('animated fadeInLeft')
+		// 				.removeClass('hide');
+		// 			$('.icon-wrap', aboutSection)
+		// 				.addClass('animated rollIn')
+		// 				.removeClass('hide');
+		// 		}
+		// 	},
+		// 	continuous: true,
+		// 	//offset: 'bottom-in-view'
+		// 	// offset: function () {
+		// 	// 	return -this.element.clientHeight + 200;
+		// 	// },
+		// 	offset: '-40%',
+		// });
 
 		var contactSection = $('#contact');
 
