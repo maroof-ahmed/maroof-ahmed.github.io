@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "start": "webpack serve --open Chrome --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "preview": "npm run build && http-server build -o -c-1"
   },
   "author": "",
   "license": "ISC",
