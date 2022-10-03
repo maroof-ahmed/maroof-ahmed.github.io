@@ -1,16 +1,14 @@
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";
 
 @import "./_variables";
-@import './_mixins';
+@import "./_mixins";
 
 @import "font-awesome.scss";
 @import "font-mfizz.scss";
 
-
 /* ==========================================================================
    BASE
    ========================================================================== */
-
 
 html {
 	overflow-x: hidden;
@@ -31,7 +29,7 @@ html {
 
 html,
 body {
-	font-family: 'roboto', sans-serif;
+	font-family: "roboto", sans-serif;
 	color: $theme-color;
 	font-size-adjust: 0.45;
 	background-color: #333;
@@ -60,6 +58,14 @@ p {
 
 hr {
 	margin: 0;
+
+	&.liner {
+		border-radius: 100%;
+		border-top: 2px solid rgb(255 255 255 / 25%);
+		&.first {
+			border-top: 2px solid rgb(255 255 255 / 80%);
+		}
+	}
 }
 
 // h1,
@@ -85,7 +91,6 @@ header {
 	position: fixed;
 	width: 100%;
 }
-
 
 .mar-top-no {
 	margin-top: 0;
@@ -122,6 +127,7 @@ header {
 
 	.desc {
 		margin-top: 25px;
+		text-align: justify;
 	}
 
 	&.opacity-hide {
@@ -129,7 +135,6 @@ header {
 		visibility: hidden;
 	}
 }
-
 
 .content-wrap {
 	padding: 0px 7%;
@@ -141,7 +146,7 @@ header {
 
 	.sub-head {
 		color: #e6e5c1 !important;
-		border-bottom: 1px solid;
+		border-bottom: 2px solid rgb(255 255 255 / 25%);
 		display: inline-block;
 		padding-bottom: 2px;
 		text-transform: uppercase;
@@ -150,21 +155,16 @@ header {
 	}
 }
 
-
-
 /* ==========================================================================
    LAYOUT
    ========================================================================== */
 
-
 $grid-columns: 24;
 
 @for $i from 1 through $grid-columns {
-
 	.column-#{$i} {
 		width: 100% / $grid-columns * $i;
 	}
-
 }
 
 $max: 15;
@@ -204,7 +204,6 @@ $step: 5;
 	.mar-b-#{$value} {
 		margin-bottom: $value + px;
 	}
-
 }
 
 .no-pad {
@@ -253,11 +252,9 @@ $step: 5;
 	}
 }
 
-
 /* ==========================================================================
    MODULE
    ========================================================================== */
-
 
 .nav-wrap li a {
 	color: #fff;
@@ -274,14 +271,14 @@ $step: 5;
 	&:hover,
 	&:focus,
 	&:visited {
-		background: rgba(153, 51, 141, 0.15);
+		background: rgba(51, 102, 153, 0.17); //rgba(153, 51, 141, 0.15);
 		outline: 0px none;
 		color: #fff !important;
 	}
 }
 
 .nav-wrap li.active a {
-	background: rgba(153, 51, 141, 0.5);
+	background: rgba(51, 102, 153, 50%); //rgba(153, 51, 141, 0.5);
 	outline: 0px none;
 	color: inherit !important;
 }
@@ -355,16 +352,16 @@ article {
 		display: inline-block;
 		cursor: default;
 
-		@include media('phone', $landscape:"") {
+		@include media("phone", $landscape: "") {
 			margin-top: 17%;
 		}
 
-		@include media('tabletL', $landscape:"") {
+		@include media("tabletL", $landscape: "") {
 			margin-top: 20vh;
 		}
 
 		h1 {
-			font-family: 'varela round', sans-serif;
+			font-family: "varela round", sans-serif;
 			background: transparentize(black, 0.8);
 			padding: 15px;
 			margin-bottom: 0;
@@ -416,11 +413,11 @@ article {
 
 .fallback-bg,
 .sn-active {
-	background: #516E87
+	background: #516e87;
 }
 
 .transition-bg {
-	background: #516E87
+	background: #516e87;
 }
 
 .round {
@@ -431,17 +428,12 @@ article {
 	box-shadow: 1px 1px 2px #111;
 }
 
-
-
-
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
 	.nav-wrap li,
 	.nav-wrap li a {
 		display: inline-block;
 	}
 }
-
 
 /*****---  [SLIDER]  ---*****/
 
@@ -466,6 +458,7 @@ article {
 .skill-slider-wrap {
 	position: absolute;
 	left: 70%;
+	top: 250px;
 }
 
 .skill-slider {
@@ -497,36 +490,30 @@ article {
 }
 
 .skyblur-bg {
-	background-image: url('../images/sky-blur.jpg');
+	background-image: url("../images/sky-blur.jpg");
 }
 
 .skyblur-bg-2 {
-	background-image: url('../images/galaxy-1.jpg');
+	background-image: url("../images/galaxy-1.jpg");
 }
 
 .skyblur-bg-3 {
-	background-image: url('../images/space-1.jpg');
+	background-image: url("../images/space-1.jpg");
 }
 
 .skyblur-bg-4 {
-	background-image: url('../images/abstract-1.jpg');
+	background-image: url("../images/abstract-1.jpg");
 }
 
 .skyblur-bg-5 {
-	background-image: url('../images/abstract-2.jpg');
+	background-image: url("../images/abstract-2.jpg");
 }
 
-
 /*****---  [/SLIDER]  ---*****/
-
 
 /* ==========================================================================
    STATE
    ========================================================================== */
-
-
-
-
 
 /* ==========================================================================
    THEME
